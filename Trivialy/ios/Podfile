@@ -1,0 +1,34 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '10.0'
+
+target 'Trivialy' do
+  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+  # use_frameworks!
+
+  # Pods for Trivialy
+  pod 'AppCenter/Push', '~> 1.0.1'
+  pod 'AppCenter/Crashes', '~> 1.0.1'
+  pod 'AppCenter/Analytics', '~> 1.0.1'
+  pod 'AppCenterReactNativeShared', '~> 1.0.1'
+
+  
+
+  target 'TrivialyTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
+
+target 'Trivialy-tvOS' do
+  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+  # use_frameworks!
+
+  # Pods for Trivialy-tvOS
+
+  target 'Trivialy-tvOSTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end

@@ -6,7 +6,7 @@ import Immutable from "seamless-immutable";
 const { Types, Creators } = createActions({
   fetchQuizRequest: null,
   fetchQuizSuccess: ["payload"],
-  quizFailure: null
+  quizFailure: null,
 });
 
 export const QuizTypes = Types;
@@ -18,6 +18,7 @@ export const INITIAL_STATE = Immutable({
   data: null,
   fetching: null,
   payload: null,
+  currentQuestionIndex: 0,
   error: null
 });
 

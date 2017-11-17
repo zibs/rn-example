@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "325925160248",
+    "firebase_url": "https://trivialy-android.firebaseio.com",
+    "project_id": "trivialy-android",
+    "storage_bucket": "trivialy-android.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:325925160248:android:c6883dd51744fc08",
+        "android_client_info": {
+          "package_name": "com.elizibin.trivialy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "325925160248-f0q5dee4323mf1q0jdc1vr5aor4jfm8i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA0JtZhTM1penP-A5Z21Lpqy3yEFJIgTt0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
