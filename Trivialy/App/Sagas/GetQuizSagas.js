@@ -1,7 +1,7 @@
-import { call, put } from "redux-saga/effects";
-import QuizActions from "../Redux/QuizRedux";
+import { call, put } from 'redux-saga/effects';
+import QuizActions from '../Redux/QuizRedux';
 
-export function* getGetQuiz(api, action) {
+export function* getQuizSaga(api, action) {
   // make the call to the api
   const response = yield call(api.getQuizData);
   if (response.ok) {
