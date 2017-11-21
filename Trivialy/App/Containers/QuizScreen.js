@@ -18,14 +18,18 @@ class QuizScreen extends React.Component {
     gesturesEnabled: false
   };
   render() {
-    const { currentQuestion: { category, question }, questions, currentQuestionIndex } = this.props;
+    const {
+      currentQuestion: { category, question },
+      numberOfQuestions,
+      currentQuestionIndex
+    } = this.props;
     return (
       <View style={[styles.mainContainer, { marginHorizontal: 15 }]}>
         <ScrollView style={styles.container}>
           <QuizHeader text={category} />
           <QuizCard question={question} />
           <Text style={styles.cardCaptionText}>{` ${currentQuestionIndex +
-            1} of ${questions.length}`}</Text>
+            1} of ${numberOfQuestions}`}</Text>
         </ScrollView>
         <SegmentedButton handlePress={this._handleAnswerPress} />
       </View>
@@ -47,7 +51,6 @@ const mapStateToProps = state => {
   return {
     // we need to run a transform on the question to clean up for presentation
     currentQuestion: prettifyQuizQuestion(quizReducer.questions[quizReducer.currentQuestionIndex]),
-    questions: quizReducer.questions,
     numberOfQuestions: quizReducer.questions.length,
     currentQuestionIndex: quizReducer.currentQuestionIndex
   };
